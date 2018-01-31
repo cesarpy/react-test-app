@@ -26,3 +26,23 @@ class Welcome extends React.Component {
     return <h1>Hello, {this.props.name}</h1>;
   }
 }
+
+//Always start component names with a capital letter.
+
+
+//elements can also represent user-defined components:
+const element = <Welcome name="Sara" />; //hace refenrencia a la funcion Welcome de arriba
+
+
+//Composing Components
+function Composing() {
+  return (
+    <div>
+      <Welcome name="Sara" />
+      <Welcome name="Cahal" />
+      <Welcome name="Edite" />
+    </div>
+  );
+}
+
+//All React components must act like pure functions with respect to their props.
